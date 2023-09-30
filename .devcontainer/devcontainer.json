@@ -43,7 +43,7 @@
 	},
 
 	// https://containers.dev/implementors/json_reference/#lifecycle-scripts
-	"postCreateCommand": "pip3 install -r requirements.txt && sudo apt install curl",
+	"postCreateCommand": "pip3 install -r requirements.txt && sudo apt install curl -y",
 	"postAttachCommand": "python app.py -p 5000"
 
 }
