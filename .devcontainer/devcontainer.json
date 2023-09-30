@@ -7,7 +7,7 @@
 	"image": "ghcr.io/metcalfc/simple-flask:edge",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
+	"features": {},
 
 	// Configure tool-specific properties.
 	"customizations": {
@@ -43,7 +43,7 @@
 	},
 
 	// https://containers.dev/implementors/json_reference/#lifecycle-scripts
-	"postCreateCommand": "pip3 install -r requirements.txt",
+	"postCreateCommand": "pip3 install -r requirements.txt && apt install curl",
 	"postAttachCommand": "python app.py -p 5000"
 
 }
